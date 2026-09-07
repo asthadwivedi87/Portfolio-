@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f5ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav h2 {
+    color: #7b4bb7;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #7b4bb7;
+}
+
+/* Sections */
+
+section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #7b4bb7;
+    margin-bottom: 25px;
+}
+
+/* Home */
+
+#home {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    margin-bottom: 15px;
+}
+
+/* About */
+
+#about p {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Skills */
+
+#skills h3 {
+    margin-top: 25px;
+    color: #7b4bb7;
+}
+
+#skills p {
+    margin-bottom: 10px;
+}
+
+/* Projects */
+
+#projects h3 {
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+#projects p {
+    max-width: 600px;
+    margin: auto;
+}
+
+#projects a,
+#contact a {
+    display: inline-block;
+    margin: 10px 0 20px;
+    padding: 10px 18px;
+    background: #7b4bb7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+#projects a:hover,
+#contact a:hover {
+    opacity: 0.8;
+}
+
+/* Activities */
+
+#activities h3 {
+    margin-top: 25px;
+    color: #7b4bb7;
+}
+
+#activities p {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Contact */
+
+#contact p {
+    margin: 10px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    #home h1 {
+        font-size: 35px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+}
